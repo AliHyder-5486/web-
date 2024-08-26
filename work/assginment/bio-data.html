@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio-Data</title>
+    <style>
+        /* body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            box-shadow: 50px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            width: 90%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid rgb(0, 0, 0);
+        } */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('background-image.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            max-width: 800px;
+            width: 90%;
+            padding: 30px;
+            backdrop-filter: blur(10px); /* Background blur effect */
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #1bbae6;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #000000;
+            font-size: 28px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+            text-align: justify;
+        }
+
+        .text p {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 300px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            max-height:100vh;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .image-container {
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            .text {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Bio-Data</h1>
+        </div>
+        <div class="content">
+            <div class="text">
+                <p>
+ My name is Ali Hyder, and I am pursuing Bachelors Degree in Software Engineering from Karakoram International University (KIU). I completed my Intermediate and Matriculation from Elysian Higher Secondary School (EHSS) in the Pre-Science and Pre-Engineering group. My academic journey has fostered a deep passion for technology, especially in software development. I am acquiring skills in programming languages, web development, and software engineering principles. I am particularly interested in exploring new technologies and contributing to innovative software solutions that solve real-world problems. My goal is to become a proficient software engineer and make a meaningful impact in the tech industry.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="../IMG-20240815-WA0033.jpg" alt="Your Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

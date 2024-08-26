@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information Table</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            color: #4b91cb;
+        }
+
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 10px;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+            }
+
+            td {
+                border: none;
+                padding-left: 50%;
+                position: relative;
+                text-align: right;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: bold;
+                text-align: left;
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Course Information</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Program</th>
+                    <th>Credits</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Name">Software Engineering</td>
+                    <td data-label="Program">BSc Software</td>
+                    <td data-label="Credits">3</td>
+                    <td data-label="Instructor">Dr Sajid Hussain</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Data Structures</td>
+                    <td data-label="Program">BSc Computer Science</td>
+                    <td data-label="Credits">4</td>
+                    <td data-label="Instructor">Dr Mazhar Ali Shah</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Ethics in IT</td>
+                    <td data-label="Program">BSc Software</td>
+                    <td data-label="Credits">2</td>
+                    <td data-label="Instructor">Dr Ismail Ali Khan</td>
+                </tr>
+                <tr>
+                    <td data-label="Name">Database Systems</td>
+                    <td data-label="Program">BSc Information Technology</td>
+                    <td data-label="Credits">3</td>
+                    <td data-label="Instructor">Dr Guljabeen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
